@@ -1,1 +1,24 @@
-"Time till Warlords!" 
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="moment.js"></script>
+<script src="countdown.min.js"></script>
+<script src="moment-countdown.min.js"></script>
+</head>
+
+<body>
+
+<h1>Time till Warlords is released</h1>
+<div id="timeTillId">Time</div>
+
+</body>
+
+<script>
+$('#timeTillId').text(moment().countdown("2014-11-13").toString());
+setInterval(function(){
+  $('#timeTillId').text(moment().countdown("2014-11-13").toString());
+}, 1000);
+
+</script>
+</html>
+
